@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Destiny Streetwear - Dark, Bold, and Unique Fashion.">
+    <title>Destiny Streetwear</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Rajdhani:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Smooth Scroll Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">Destiny</div>
+    <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#products">Collection</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+<section class="hero" id="home">
+    <img src="black.jpg" alt="Destiny Hero Image">
+    <div class="hero-content">
+        <h1>Destiny</h1>
+        <p>Raw. Bold. Urban. Elevate your wardrobe game.</p>
+        <a href="#products" class="btn">Shop Now</a>
+    </div>
+</section>
+<section class="products" id="products">
+    <h2>Collection</h2>
+    <div class="product-grid">
+        <div class="product">
+            <img src="https://via.placeholder.com/500x350/111111/ff0000?text=Street+Hoodie" alt="Product 1">
+            <div class="info">
+                <h3>Street Hoodie</h3>
+                <p>$89.99</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    // Smooth Scroll with GSAP
+    gsap.from(".hero-content", { duration: 1.5, y: -50, opacity: 0, ease: "power2.out" });
+    gsap.from(".product", { duration: 1.5, y: 50, opacity: 0, stagger: 0.2 });
+</script>
+
+</body>
+</html>
